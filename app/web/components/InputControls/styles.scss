@@ -1,0 +1,53 @@
+.inputControl {
+    .boolInput {
+        width: 120px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #ebebeb;
+        border-radius: 4px;
+        font-size: 18px;
+        color: #292a3a;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #fff;
+        &:hover {
+            border-color: #00b9f5;
+        }
+        &:first-child {
+            margin-right: 16px;
+        }
+        &.selected {
+            border-color: #00b9f5;
+            border-width: 2px;
+        }
+    }
+    .dateInput,
+    .stringInput,
+    .numberInput {
+        width: 240px;
+        height: 32px;
+        text-align: center;
+        font-size: 18px;
+        color: #292a3a;
+        padding: 8px 8px 8px 4px;
+        border: none;
+        outline: none;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid #d7d7d7;
+        &:focus {
+            border-color: #00b9f5;
+        }
+    }
+    .stringInput {
+        text-align: left;
+    }
+    .dateInput {
+        text-align: left;
+        width: 128px;
+        padding: 18px;
+    }
+}

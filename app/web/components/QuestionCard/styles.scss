@@ -1,0 +1,35 @@
+.questionCard {
+    padding: 24px 12px;
+    text-align: center;
+    .question {
+        font-size: 20px;
+        font-weight: 500;
+        color: #1976D2;
+        &.required {
+            &::before {
+                content: '*';
+                color: #E57373;
+                margin-right: 4px;
+            }
+        }
+    }
+    .answer {
+        margin-top: 16px;
+    }
+    .footer {
+        margin-top: 20px;
+        text-align: right;
+        .submitBtn {
+            text-transform: uppercase;
+            padding: 0px 4px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #8BC34A;
+            cursor: pointer;
+            &.disabled {
+                color: #eee;
+                pointer-events: none;
+            }
+        }
+    }
+}
