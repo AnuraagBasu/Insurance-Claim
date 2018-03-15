@@ -24,6 +24,9 @@
             border-color: #00b9f5;
             border-width: 2px;
         }
+        @media screen and (min-width: 576px) {
+            font-size: 20px;
+        }
     }
     .dateInput,
     .stringInput,
@@ -41,13 +44,20 @@
         &:focus {
             border-color: #00b9f5;
         }
+        @media screen and (min-width: 576px) {
+            font-size: 20px;
+            width: 320px;
+        }
     }
     .stringInput {
         text-align: left;
     }
     .dateInput {
         text-align: left;
+        padding: 16px;
         width: 128px;
-        padding: 18px;
+        @media screen and (min-width: 576px) {
+            width: 144px;
+        }
     }
 }

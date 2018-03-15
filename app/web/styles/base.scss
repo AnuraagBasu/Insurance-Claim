@@ -17,21 +17,30 @@ body {
             margin: 0 auto;
             text-align: center;
             padding: 20px;
+            @media screen and (min-width: 576px) {
+                padding: 40px;
+            }
             .title {
-                font-size: 22px;
                 font-weight: 500;
                 color: #292a3a;
                 text-transform: capitalize;
+                font-size: 22px;
+                @media screen and (min-width: 576px) {
+                    font-size: 24px;
+                }
             }
             .card {
                 width: 100%;
                 margin: 0 auto;
-                max-width: 320px;
                 -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
                 -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
                 box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
                 background-color: #fff;
                 border-radius: 8px;
+                max-width: 320px;
+                @media screen and (min-width: 576px) {
+                    max-width: 480px;
+                }
             }
         }
     }
